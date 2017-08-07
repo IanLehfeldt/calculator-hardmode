@@ -16,6 +16,16 @@ app.post('/calculate', function (req, res){
     calculateArray.push(req.body);
 })
 
+app.get('/clearArray', function (req, res){
+    calculateArray = [];
+    res.send(calculateArray);
+})
+
+app.get('/calculationsArray', function (req, res){
+    console.log('Checking array for calculations');
+    res.send(calculateArray);
+})
+
 app.listen(port, function(){
     console.log('Server is listening to port: ', port); 
 })
