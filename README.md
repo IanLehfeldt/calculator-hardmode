@@ -1,5 +1,7 @@
 #Server Side Calculator
 
+Applied hard-mode logic to instructor live-solve of base mode.
+
 Does math calculations on the server (+, -, /, *).
 
 ## Task List
